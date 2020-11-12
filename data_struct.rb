@@ -234,3 +234,84 @@
   # p letters.clone
   # p nums.max
   # p nums.min
+
+  # Hashes
+    # key value pair, mostly are used to describe objects
+    # bob = { first_name: 'bob', last_name: 'smith', age: 53 }
+    # jil = { first_name: 'jil', last_name: 'smith', age: 53 }
+    # rick = { first_name: 'rick', last_name: 'smith', age: 23 }
+      # p bob[:first_name]
+      # p jil[:last_name]
+      # p rick[:age]
+      # p bob[:hair_color]
+
+      # add items into a hash
+      # p bob[:hair_color] = 'Purple'
+      # p bob
+
+    # hash = { 1 => 'bob' }
+    #     hash[1]
+    #     hash["1"]
+    # hash = { "first_name" => 'bob' }
+    #   hash["first_name"]
+
+
+    # person = {
+    #   first_name: 'Abe',
+    #   last_name: 'Lincoln',
+    #   age: 206,
+    #   awesome_beard?: true,
+    #   quotes: ['Whatever you are, be a good one',"Don’t believe everything you read on the internet"]
+    # }
+    # # puts person[:age]
+    # puts person[:quotes].first
+    # puts person[:quotes][0]
+
+    # people = [
+    #   { first_name: 'Dave', last_name: 'Jungst' },
+    #   { first_name: 'Bat', last_name: 'man', age: 30 },
+    #   { first_name: 'Jake', last_name: 'Sorce'}
+    # ]
+
+    # puts people[:age][3]
+    # puts people[1][:age]
+
+
+    # languages = { 
+    #   language: {
+    #     ruby: { 
+    #       conceived: 1993,
+    #       awesomeness: 9000
+    #     },
+    #     java: {
+    #       conceived: 1991,
+    #       awesomeness: false
+    #     }
+    #   }
+    # }
+
+    # puts languages[2][:awesomeness]
+    # puts languages[0][:awesomeness]
+    # puts languages[:language][:ruby][:awesomeness]
+    # languages[:language][:ruby][:awesomeness] = 8000
+
+    # Hash.new()
+
+    # bob = { first_name: 'bob', last_name: 'smith', age: 53 }
+    # dave = { first_name: 'Dave', last_name: 'Jungst' }
+
+    # puts bob.keys
+    # puts bob.values
+    # puts bob.delete(:first_name)
+    # p bob
+    # bob.clear
+    # p bob.has_key? :car
+    # bob.each do |key, value|
+    #   puts "#{key} is #{value}"
+    # end
+    # bob.each do |attr, value|
+    #   puts "#{attr} is #{value}"
+    # end
+
+    # new_hash = bob.merge(dave)
+    # p new_hash
